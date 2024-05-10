@@ -1,0 +1,251 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	box-sizing: border-box;
+}
+body
+{
+	background: black;
+	color: #fff;
+}
+.logo {
+  color:white;
+  font-size: 30px;
+}
+
+.logo span {
+  color: darkblue;
+}
+
+.menu-bar {
+  background-color:#0F0F0F;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+
+  position: relative;
+}
+
+.menu-bar ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu-bar ul li {
+  /* width: 120px; */
+  padding: 10px 30px;
+  /* text-align: center; */
+
+  position: relative;
+}
+
+.menu-bar ul li a {
+  font-size: 20px;
+  color: silver;
+  text-decoration: none;
+
+  transition: all 0.3s;
+}
+
+.menu-bar ul li a:hover {
+  color:darkblue;
+}
+
+.fas {
+  float: right;
+  margin-left: 10px;
+  padding-top: 3px;
+}
+
+/* dropdown menu style */
+.dropdown-menu {
+  display: none;
+}
+
+.menu-bar ul li:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: black;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul {
+  display: block;
+  margin: 10px;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul li {
+  width: 150px;
+  padding: 10px;
+}
+
+.dropdown-menu-1 {
+  display: none;
+}
+
+.dropdown-menu ul li:hover .dropdown-menu-1 {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background-color: black;
+}
+
+.hero {
+  height: calc(100vh - 80px);
+  background-image: url(./bg.jpg);
+  background-position: center;
+}
+
+
+section{
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+section video{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+section h2{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-transform: uppercase;
+	font-size: 300px;
+	text-align: center;
+	font-weight: 900;
+	line-height: 0.85cm;
+	color: #fff;
+	background: #020202;
+	mix-blend-mode: multiply;
+}
+section h2 span{
+	font-size: 100px;
+	line-height: 0.85cm;
+}
+/*------------------------cards----------------------*/
+
+.container2
+{
+  position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1700px;
+  flex-wrap: wrap;
+  z-index: 1;
+margin-top: 800px;
+}
+.card
+{
+  position: center;
+
+  width: 280px;
+  height: 400px;
+  margin: 30px;
+  border-radius: 15px;
+  box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+  background: rgba(255,255,255,0.1);
+  overflow: hidden;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+  border-top: 1px solid rgba(144,36,173,0.33);
+  border-left: 1px solid rgba(218,24,229,0.50);
+}
+.container2 .card .content
+{
+  padding: 20px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 0.5s;
+	position: fixed;
+}
+.container2 .card:hover .content
+{
+  opacity: 1;
+  transform: translateY(0);
+}
+.container2 .card .content h2
+{
+  position: absolute;
+  top: -80px;
+  right: 30px;
+  font-size: 7em;
+  color: rgba(255,255,255,0.05);
+}
+.container2 .card .content h3
+{
+  font-size: 3em;
+  color: #fff;
+  z-index: 1;
+  transition: 0.4s;
+}
+.container2 .card .content p
+{
+  font-size: 16px;
+  font-weight: 300 !important;
+  color: rgba(255,0,221,0.49);
+  z-index: 1;
+  transition: 0.4s;
+}
+.container2 .card .content a
+{
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  margin-top: 15px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  color: #111;
+  background: #fff;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+/*--------------footer---------*/
+
+.copyright{
+	padding: 25px 0;
+	text-align: center;
+}
+.copyright p{
+	font-size: 14px;
+}
+
+@media only screen(min-width=1150px){
+	.menu-bar{
+		
+	}
+}
+.table
+{
+	flex-wrap: wrap;
+}
+
+.container3{
+	background-attachment: fixed, scroll;
+}

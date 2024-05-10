@@ -1,0 +1,211 @@
+.glass-panel {
+    color: rgb(48, 38, 38);
+    margin: 40px auto;
+    background-color: rgba(241, 221, 221, 0.06);
+    border: 1px solid rgba(241, 227, 227, 0.1);
+    width: 100%;
+    border-radius: 15px;
+    padding: 32px;
+    backdrop-filter: blur(10px);
+  }
+  
+
+  
+  
+  body {
+    width: 100%;
+    min-height: 100vh;    
+    background: url(pics/nsbm4.jpg);
+    background-color: gray;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+  }
+.logo {
+  color:white;
+  font-size: 30px;
+}
+
+.logo span {
+  color: darkblue;
+}
+
+.menu-bar {
+  background-color:black;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+
+  position: relative;
+}
+
+.menu-bar ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu-bar ul li {
+  /* width: 120px; */
+  padding: 10px 30px;
+  /* text-align: center; */
+
+  position: relative;
+}
+
+.menu-bar ul li a {
+  font-size: 20px;
+  color: silver;
+  text-decoration: none;
+
+  transition: all 0.3s;
+}
+
+.menu-bar ul li a:hover {
+  color:darkblue;
+}
+
+.fas {
+  float: right;
+  margin-left: 10px;
+  padding-top: 3px;
+}
+
+/* dropdown menu style */
+.dropdown-menu {
+  display: none;
+}
+
+.menu-bar ul li:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: black;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul {
+  display: block;
+  margin: 10px;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul li {
+  width: 150px;
+  padding: 10px;
+}
+
+.dropdown-menu-1 {
+  display: none;
+}
+
+.dropdown-menu ul li:hover .dropdown-menu-1 {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background-color: black;
+}
+
+.hero {
+  height: calc(100vh - 80px);
+  background-image: url(./bg.jpg);
+  background-position: center;
+}
+  
+  .glass-panel {  
+    max-width: 800px;
+  }
+  
+  
+  h1 {
+    min-height: 120px;
+    width: 90%;
+    max-width: 700px;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0 auto;
+    text-decoration: none;
+    color: rgb(3, 3, 3);
+    padding-top: 60px;
+    color: rgba(255, 255, 255, 0.863);
+    
+  }
+  
+  p {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 32px;
+    color: rgba(253, 245, 245, 0.979);
+  }
+
+/*-----------------------------------------*/
+
+footer{
+	background: #111;
+	height: auto;
+	width: 100vw;
+	padding-top: 40px;
+	color: #fff;
+}
+.footer-content{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	
+}
+.footer-content h3{
+	font-size: 1.8rem;
+	font-weight: 400;
+	text-transform: capitalize;
+	line-height: 3rem;
+}
+.footer-content p{
+	max-width: 500px;
+	margin: 10px auto;
+	line-height: 28px;
+	font-size: 14px;
+}
+.socials{
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 1rem 0 3rem 0;
+	
+}
+.Socials li{
+	margin: 0 10px;
+}
+.Socials img{
+	text-decoration: none;
+	color: #fff;
+	
+}
+.Socials img{
+	font-size: 1.1rem;
+	transition: color .4s ease;
+}
+.Socials img:hover i{
+	color: aqua;
+}
+.footer-bottom {
+	background: #000;
+	width: 100vw;
+	padding: 20px 0;
+	text-align: center;
+}
+.footer-bottom p{
+	font-size: 14px;
+	word-spacing: 2px;
+	text-transform: capitalize;
+}
